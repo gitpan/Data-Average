@@ -1,0 +1,31 @@
+NAME
+    Data::Average - Hold Data Set To Calculate Average
+
+SYNOPSIS
+      use Data::Average;
+
+      my $data = Data::Average->new;
+      $data->add($_) for (1..100);
+
+      print $data->avg; # 55
+
+DESCRIPTION
+    Data::Average is a very simple module: You add values to it, and then
+    you compute the average using the avg() function.
+
+METHODS
+  new()
+    Creates a new Data::Average object
+
+  add($value)
+    Adds a value to the Data::Average set.
+
+  length()
+    Returns the current data set
+
+  avg()
+    Returns the average of the entire set
+
+AUTHOR
+    Copyright (c) 2006 Daisuke Maki <dmaki@cpan.org> All rights reserved.
+

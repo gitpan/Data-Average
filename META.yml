@@ -1,0 +1,29 @@
+---
+name: Data-Average
+version: 0.01
+author:
+  - |-
+    Copyright (c) 2006 Daisuke Maki E<lt>dmaki@cpan.orgE<gt>
+    All rights reserved.
+abstract: Hold Data Set To Calculate Average
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  UNIVERSAL::isa: 0
+provides:
+  Data::Average:
+    file: lib/Data/Average.pm
+    version: 0.01
+  Data::Average::Bounded:
+    file: lib/Data/Average/Bounded.pm
+  Data::Average::BoundedExpires:
+    file: lib/Data/Average/BoundedExpires.pm
+  Data::Average::Expires:
+    file: lib/Data/Average/Expires.pm
+  Data::Average::Expires::Item:
+    file: lib/Data/Average/Expires.pm
+generated_by: Module::Build version 0.28
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
