@@ -32,7 +32,7 @@ __END__
 
 =head1 NAME
 
-Data::Average::Expires - Data::Average With Expiry
+Data::Average::Bounded - Data::Average With Bounded
 
 =head1 SYNOPSIS
 

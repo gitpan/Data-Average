@@ -51,12 +51,13 @@ sub add
     my $self = shift;
     $self->expire_items;
 
+    my @args;
     for (@_) {
         if (!ref($_) || ! $_->isa('Data::Average::Expires::Item')) {
-            $_ = Data::Average::Expires::Item->new(expires_in => $self->{expires_in}, value => $_);
+            push @args, Data::Average::Expires::Item->new(expires_in => $self->{expires_in}, value => $_);
         }
     }
-    $self->SUPER::add(@_);
+    $self->SUPER::add(@args);
 }
 
 package Data::Average::Expires::Item;
