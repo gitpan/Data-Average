@@ -1,6 +1,9 @@
 Changes
 =======
 
+0.03000
+    - Fix illegal division by zero. rt#30715
+
 0.02 - 17 May 2006
     - Fix document
     - Fix data traversal on arguments for Expires.pm

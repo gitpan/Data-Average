@@ -1,4 +1,4 @@
-# $Id: Bounded.pm 1 2006-05-16 15:02:55Z daisuke $
+# $Id: /mirror/perl/Data-Average/trunk/lib/Data/Average/Bounded.pm 9150 2007-11-14T06:59:35.566402Z daisuke  $
 #
 # Copyright (c) 2006 Daisuke Maki <dmaki@cpan.org>
 # All rights reserved.

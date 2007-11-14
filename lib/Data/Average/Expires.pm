@@ -1,4 +1,4 @@
-# $Id: Expires.pm 1 2006-05-16 15:02:55Z daisuke $
+# $Id: /mirror/perl/Data-Average/trunk/lib/Data/Average/Expires.pm 9157 2007-11-14T07:11:14.821380Z daisuke  $
 #
 # Copyright (c) 2006 Daisuke Maki <dmaki@cpan.org>
 # All rights reserved.
@@ -86,7 +86,7 @@ __END__
 
 =head1 NAME
 
-Data::Average - Hold Data Set To Calculate Average
+Data::Average::Expires - Hold Data Set To Calculate Average
 
 =head1 SYNOPSIS
 
@@ -115,6 +115,10 @@ for example, you can track the average value of something for the last
 
 Creates a new Data::Average object, with default expire time set to the
 value denoted by $expires_in
+
+=head2 expire_items
+
+Expires items.
 
 =head2 add($value)
 

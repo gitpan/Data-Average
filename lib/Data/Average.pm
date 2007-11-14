@@ -1,4 +1,4 @@
-# $Id: Average.pm 1 2006-05-16 15:02:55Z daisuke $
+# $Id: /mirror/perl/Data-Average/trunk/lib/Data/Average.pm 9158 2007-11-14T07:11:39.898727Z daisuke  $
 #
 # Copyright (c) 2006 Daisuke Maki <dmaki@cpan.org>
 # All rights reserved.
@@ -10,7 +10,7 @@ use vars qw($VERSION);
 
 BEGIN
 {
-    $VERSION = '0.02';
+    $VERSION = '0.03000';
 }
 
 sub new
@@ -27,8 +27,10 @@ sub avg
     my $self   = shift;
     my $total  = 0;
     my $length = $self->length;
-    for my $i (0..$length - 1) {
-        my $v = $self->{data}->[$i];
+
+    return () if $length <= 0;
+    my @data = @{ $self->{data} };
+    foreach my $v (@data) {
         if (ref($v) && $v->can('value')) {
             $total += $v->value;
         } else {
@@ -88,7 +90,13 @@ Returns the average of the entire set
 
 =head1 AUTHOR
 
-Copyright (c) 2006 Daisuke Maki E<lt>dmaki@cpan.orgE<gt>
-All rights reserved.
+Copyright (c) 2006-2007 Daisuke Maki E<lt>daisuke@endeworks.jp<gt>
+
+=head1 LICENSE
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+See http://www.perl.com/perl/misc/Artistic.html
 
 =cut
